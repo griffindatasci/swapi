@@ -12,6 +12,7 @@ Process:
     1. Open the command prompt and navigate to a suitable host directory
     1. Execute `git clone <repo-name>`
     1. Close command prompt
+    - Note: push material back to the git repo with `git add .`, `git commit -m "<message>"` and `git push origin`
 - Install DBT on local machine:
     1. Open command prompt
     1. Execute `pip install dbt-postgres`
@@ -27,3 +28,5 @@ Process:
     1. Open command prompt, navigate to the database directory (made at init, within the github repo)
     1. Execute `dbt debug`
     1. Execute `dbt run`
+
+
