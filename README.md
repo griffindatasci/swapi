@@ -28,5 +28,7 @@ Process:
     1. Open command prompt, navigate to the database directory (made at init, within the github repo)
     1. Execute `dbt debug`
     1. Execute `dbt run`
+    1. Execute `dbt test` - note a fail may occur that requires uncommenting in *models/my_first_dbt_model.sql*; if so, edit, save then run and test again
+
 
 
