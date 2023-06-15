@@ -24,3 +24,44 @@ Happy modeling!
 [0m20:55:50.573882 [debug] [MainThread]: Command `dbt init` succeeded at 20:55:50.573882 after 8.46 seconds
 [0m20:55:50.574882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B0A4CA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204AC75BD00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B2F837C0>]}
 [0m20:55:50.574882 [debug] [MainThread]: Flushing usage events
+[0m21:17:04.241930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D83EF8CA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8414DC640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8414DC400>]}
+
+
+============================== 21:17:04.245941 | 48046441-021b-4fab-ad73-d5af0fde91cb ==============================
+[0m21:17:04.245941 [info ] [MainThread]: Running with dbt=1.5.1
+[0m21:17:04.246927 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Griff-Kauff\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:17:04.247926 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Griff-Kauff\Dropbox\rob_new\griffindatasci\github\swapi\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:17:04.248927 [debug] [MainThread]: Command `dbt run` failed at 21:17:04.248927 after 0.03 seconds
+[0m21:17:04.249926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D83EF8CA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8414DC3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8414DC670>]}
+[0m21:17:04.249926 [debug] [MainThread]: Flushing usage events
+[0m21:17:47.464914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002232A30CA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002232C85C580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002232C85C3D0>]}
+
+
+============================== 21:17:47.469925 | 808f2f57-6bcb-4d30-bbd5-bc66fddc6bc1 ==============================
+[0m21:17:47.469925 [info ] [MainThread]: Running with dbt=1.5.1
+[0m21:17:47.470912 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Griff-Kauff\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:17:47.470912 [info ] [MainThread]: dbt version: 1.5.1
+[0m21:17:47.471910 [info ] [MainThread]: python version: 3.10.6
+[0m21:17:47.472910 [info ] [MainThread]: python path: C:\Users\Griff-Kauff\AppData\Local\Programs\Python\Python310\python.exe
+[0m21:17:47.472910 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m21:17:47.473909 [info ] [MainThread]: Using profiles.yml file at C:\Users\Griff-Kauff\.dbt\profiles.yml
+[0m21:17:47.473909 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Griff-Kauff\Dropbox\rob_new\griffindatasci\github\swapi\dbt_project.yml
+[0m21:17:47.474908 [info ] [MainThread]: Configuration:
+[0m21:17:47.550860 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:17:47.551860 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:17:47.551860 [info ] [MainThread]: Required dependencies:
+[0m21:17:47.552858 [debug] [MainThread]: Executing "git --help"
+[0m21:17:47.591842 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:17:47.592833 [debug] [MainThread]: STDERR: "b''"
+[0m21:17:47.593832 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:17:47.594833 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:17:47.595832 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m21:17:47.596831 [debug] [MainThread]: Command `dbt debug` failed at 21:17:47.596831 after 0.15 seconds
+[0m21:17:47.596831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002232A30CA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002232C8438B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223293F34C0>]}
+[0m21:17:47.597831 [debug] [MainThread]: Flushing usage events

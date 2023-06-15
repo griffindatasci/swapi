@@ -17,7 +17,7 @@ Process:
     1. Open command prompt
     1. Execute `pip install dbt-postgres`
     1. Close command prompt
-- Initialise the PostgreSQL database:
+- Initialise the DBT project:
     1. Open command prompt and navigate to the github repo
     1. Execute `dbt init <database-name>`
     1. Close command prompt
@@ -29,6 +29,15 @@ Process:
     1. Execute `dbt debug`
     1. Execute `dbt run`
     1. Execute `dbt test` - note a fail may occur that requires uncommenting in *models/my_first_dbt_model.sql*; if so, edit, save then run and test again
+- Create the PostgreSQL database:
+    1. For now, ust go here: https://www.microfocus.com/documentation/idol/IDOL_12_0/MediaServer/Guides/html/English/Content/Getting_Started/Configure/_TRN_Set_up_PostgreSQL.htm
+- Create tables in pgAdmin4
+- Write and execute Python scripts to scrape data and transfer it to swapi_database
+
+### TODO:
+
+- Figure out how to get DBT involved in scrape/transform; suspect DBT will incorporate the work I am currently performing manually with python script execution (main.py and api_wan_kanapi.py)
+- Design and implement schema (possible idea: dim_people, dim_films, dim_planets, fct_appearance (each observation is a character appearance per film, allowing summaries of e.g. which homeplanet was most represented in each film? which film had the greatest average character height? etc.) but not sure if this is a valid/legitimate way to use star-schema)
 
 
 
