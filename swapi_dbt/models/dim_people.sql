@@ -1,7 +1,8 @@
 {{ config(materialized='table') }}
 
 with people as (
-    select * from stg_people
+--  select 1 as id
+    select people_id UNIQUE NOT NULL from {{ ref('stg_people')}}
 )
 
 select *

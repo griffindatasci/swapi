@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: swapi
+    database: swapi
+
+models:
+  - name: dim_people
+    description: "Data of each unique person/character in Star Wars from SWAPI"
+    columns:
+      - name: people_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
