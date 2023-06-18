@@ -38,7 +38,7 @@ with psycopg2.connect(database=database_name,
 
 
 # Send data to the Postgresql database: swapi. 
-command = """INSERT INTO stg_planets (planet_id, name, diameter, rotation_period, orbital_period, gravity, population, climate, terrain, surface_water, created, edited) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);"""
+command = """INSERT INTO stg_planets VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);"""
 
 with psycopg2.connect(database=database_name, 
                     user=database_user, 
