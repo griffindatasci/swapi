@@ -1,11 +1,11 @@
 # SWAPI > PostgreSQL Database
 
-Aims: 
+### Aims: 
 - Scrape data from the [Star Wars API (SWAPI)](https://swapi.dev/); datasets include films, planets, people (characters), starships, species, vehicles
 - Use DBT to transform data
 - Host database in PostgreSQL
 
-Process:
+### My Process to make this (so far):
 - Install PostgreSQL
 - Create a github repo at github.com
 - Clone the repo to the local machine:
@@ -31,13 +31,12 @@ Process:
     1. Execute `dbt test` - note a fail may occur that requires uncommenting in *models/my_first_dbt_model.sql*; if so, edit, save then run and test again
 - Create the PostgreSQL database:
     1. For now, ust go here: https://www.microfocus.com/documentation/idol/IDOL_12_0/MediaServer/Guides/html/English/Content/Getting_Started/Configure/_TRN_Set_up_PostgreSQL.htm
-- Create tables in pgAdmin4
 - Write and execute Python scripts to scrape data and transfer it to swapi_database
 
 ### TODO:
 
-- Figure out how to get DBT involved in scrape/transform; suspect DBT will incorporate the work I am currently performing manually with python script execution (main.py and api_wan_kanapi.py)
-- Design and implement schema (possible idea: dim_people, dim_films, dim_planets, fct_appearance (each observation is a character appearance per film, allowing summaries of e.g. which homeplanet was most represented in each film? which film had the greatest average character height? etc.) but not sure if this is a valid/legitimate way to use star-schema)
+- Python scripts currently used to make staging data, and dim .sql files (dim_people prepared) to make dimension tables, but currently cannot get dbt to pick up stg_people which is present in postgresql - suspect something to do with profiles/config
+- Design and implement schema (possible idea: dim_people, dim_films, dim_planets, fct_appearances (each observation is a character appearance per film, allowing summaries of e.g. which homeplanet was most represented in each film? which film had the greatest average character height? etc.) but not sure if this is a valid/legitimate way to use/design model)
 
 
 
