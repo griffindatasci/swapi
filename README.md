@@ -32,10 +32,13 @@
 - Create the PostgreSQL database:
     1. For now, ust go here: https://www.microfocus.com/documentation/idol/IDOL_12_0/MediaServer/Guides/html/English/Content/Getting_Started/Configure/_TRN_Set_up_PostgreSQL.htm
 - Write and execute Python scripts to scrape data and transfer it to swapi_database
+- Add .sql models
+- Add sources.yml
+- Run `dbt run`
 
 ### TODO:
 
-- Python scripts currently used to make staging data, and dim .sql files (dim_people prepared) to make dimension tables, but currently cannot get dbt to pick up stg_people which is present in postgresql - suspect something to do with profiles/config
+- Create remaining dim and fct .sql scripts and execute to make final datasets
 - Design and implement schema (possible idea: dim_people, dim_films, dim_planets, fct_appearances (each observation is a character appearance per film, allowing summaries of e.g. which homeplanet was most represented in each film? which film had the greatest average character height? etc.) but not sure if this is a valid/legitimate way to use/design model)
 
 

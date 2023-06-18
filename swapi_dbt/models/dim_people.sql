@@ -2,7 +2,7 @@
 
 with people as (
 --  select 1 as id
-  select * from {{source('swapi', 'stg_people')}}
+  select people_id, name, height from {{source('postgres', 'stg_people')}}
 )
 
 select *
