@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: postgres
+    database: swapi  
+    tables:
+      - name: stg_people
+      - name: stg_planets
+      - name: stg_appearances
+      - name: stg_films
+      - name: fct_appearances

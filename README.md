@@ -1,9 +1,13 @@
 # SWAPI > PostgreSQL Database
 
+### UPDATE (2023/06/18):
+- Now working fully; takes raw data from API (by running python scripts), creates staging tables in python, and dbt creates dimension and fact tables. I added a summary of planets per film as a test that this works as expected to give "business" insight...
+
 ### Aims: 
 - Scrape data from the [Star Wars API (SWAPI)](https://swapi.dev/); datasets include films, planets, people (characters), starships, species, vehicles
 - Use DBT to transform data
 - Host database in PostgreSQL
+- (extra) Added summary of number of home planets (of characters featured in each film) per film
 
 ### My Process to make this (so far):
 - Install PostgreSQL
@@ -35,11 +39,4 @@
 - Add .sql models
 - Add sources.yml
 - Run `dbt run`
-
-### TODO:
-
-- Create remaining dim and fct .sql scripts and execute to make final datasets
-- Design and implement schema (possible idea: dim_people, dim_films, dim_planets, fct_appearances (each observation is a character appearance per film, allowing summaries of e.g. which homeplanet was most represented in each film? which film had the greatest average character height? etc.) but not sure if this is a valid/legitimate way to use/design model)
-
-
 

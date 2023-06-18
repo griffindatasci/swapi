@@ -1,7 +1,0 @@
-version: 2
-
-sources:
-  - name: postgres
-    database: swapi  
-    tables:
-      - name: stg_people
