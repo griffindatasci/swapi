@@ -5,7 +5,7 @@ from math import ceil
 import requests
 
 
-def api_wan(resource, overwrite=False):
+def api_wan(resource):
 
     # Get number of pages to scrape (ensures all data is scraped with minimal requests)
     api_return = requests.get(f"https://swapi.dev/api/{resource}", timeout=90)
